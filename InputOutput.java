@@ -19,11 +19,10 @@ public class InputOutput {
         // System.out.print("Enter Your Price : ");
         // float price = input.nextFloat();
         // System.out.println("Your Price is " + price);
-System.out.println("enter your double price");
+        System.out.println("enter your double price");
 
-        double price=input.nextDouble();
-        System.out.println("Enter your double price  "+ price);
-        
+        double price = input.nextDouble();
+        System.out.println("Enter your double price  " + price);
 
     }
 }
