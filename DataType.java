@@ -8,7 +8,7 @@ public class DataType {
         long longvalue=33333;
         char charValue='a';
         int[] arr= {1,2,3,4,5,6,7,8};
-        System.out.println( arr);
-        // System.out.println(name+" "+age+" "+distance+" "+doubleDistance+" "+isAdult+" "+doubleDistance);
+        System.out.println( arr);           
+        System.out.println(name+" "+age+" "+distance+" "+doubleDistance+" "+isAdult+" "+doubleDistance);
     }
 }
