@@ -1,0 +1,13 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "main": "IimportantShortinhAlgo.js",
+  "type": "module",
+  "scripts": {
+    "start": "node IimportantShortinhAlgo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

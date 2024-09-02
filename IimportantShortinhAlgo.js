@@ -16,3 +16,9 @@ console.log("unsorted array: ", arr)
 SelectionSort(arr)
 
 console.log("sorted array",arr)
+
+let names="Pavandeep Kumar"
+
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers
+console.log(result); // 14
