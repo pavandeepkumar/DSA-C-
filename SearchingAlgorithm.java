@@ -1,8 +1,16 @@
 public class SearchingAlgorithm {
     public static void main(String[] args) {
-        int[] i = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        Revision.LinearSearch(i, 5);
-        Revision.BinarySearch(i, 5);
+        int[] arr = new int[1000]; // Create an array of size 1000
+
+        // Fill the array with sequential numbers from 1 to 1000
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+        }
+
+        // The array 'arr' is now sorted and contains numbers from 1 to 1000
+    int [] array={4,8,19,25,34,39,45,48,66,75,89,95};
+        // Revision.LinearSearch(arr, 500);
+        Revision.BinarySearch(array, 89);
     }
 }
 
@@ -20,7 +28,7 @@ class Revision {
     public static void BinarySearch(int[] array, int value) {
         int low = 0;
         int high = array.length - 1;
-        
+           
         while (low <= high) {
             System.out.println("Run");
             if (array[0] == value) {
