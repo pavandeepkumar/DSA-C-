@@ -26,6 +26,17 @@ export const isPrime = (val) => {
     return true
 }
 
-const UniqueArrays =(array=[])=>[...new Set(array)]
-console.log(UniqueArrays([2,3,4,4]))
-    
+const UniqueArrays = (array = []) => [...new Set(array)]
+console.log(UniqueArrays([2, 3, 4, 4]))
+
+const calculateAverage = (array = []) => array.reduce((acc, value) => (acc + value), 0) / array.length
+console.log("calculating average", calculateAverage([1, 2, 3, 4, 5]))
+
+const removeFalsyValues = (arr = []) => arr.filter(Boolean)
+console.log("removeFalsyValues", removeFalsyValues([0, false, undefined, 3, 5, false]))
+
+const findSecondLargestNumber = (arr = []) => arr.sort()[arr.length - 2]
+console.log("findSecondLargest", findSecondLargestNumber([3, 6, 4, 5, 7]))
+
+const separateOddEvenNumber = (arr = []) => [[...arr.filter(val => val % 2 == 0)], [...arr.filter(val => val % 2 !== 0)]]
+console.log(separateOddEvenNumber([1,2,3,4,5,6,7,8]))
