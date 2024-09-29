@@ -53,6 +53,55 @@ public class ArrayQuestion {
         }
     }
 
+    public static int majorityElement(int[] nums) {
+        int[] myArray = new int[100];
+        // Arrays.fill(myArray, 0);
+
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+
+            myArray[nums[i]]++;
+            System.out.println("myArray" + nums[i]);
+        }
+
+        System.out.println("myarray" + myArray);
+        int maxCount = 0;
+        int majorityElement = -1;
+
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] > maxCount) {
+                maxCount = myArray[i];
+                majorityElement = i; // Store the element (index) with the highest count
+            }
+        }
+        // System.out.println("max" + max);
+        printLoop(myArray);
+
+        return majorityElement;
+
+        // System.out.println("Myarray: " + myArray);
+
+    }
+
+    public static void sortArrayZerosOne(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                count++;
+            }
+        }
+        System.out.println("Array " + count);
+        for (int i = 0; i < array.length; i++) {
+            if (i < count) {
+                array[i] = 0;
+            } else {
+                array[i] = 1;
+            }
+        }
+        printLoop(array);
+    }
+
     public static int[] rotate(int[] arr, int num) {
         int n = arr.length;
         int[] ans = new int[n];
@@ -89,11 +138,16 @@ public class ArrayQuestion {
         System.out.println("Hello, world!");
 
         // swap(3, 4);
-        int[] array = { 1, 2, 3, 4, 5 };
-        printLoop(array);
-        // reverseArray(array);
-        rotateInPlace(array, 101);
-        printLoop(array);
+        int[] array = { 0, 1, 1, 0, 0, 1 };
+        // printLoop(array);
+        // // reverseArray(array);
+        // rotateInPlace(array, 101);
+        // printLoop(array);
         // swapWithoutVariable(4, 6);
+
+        // int result = majorityElement(array);
+        // System.out.println("result: " + result);
+
+        sortArrayZerosOne(array);
     }
 }
